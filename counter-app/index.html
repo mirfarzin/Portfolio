@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+   <style>
+    body {
+        background-color: rgb(44, 44, 230);
+    }
+    #countLabel {
+        display: block;
+        text-align: center;
+        font-size: 7em;
+        font-family: helvetica;
+        color: white;
+    }
+    #container {
+        text-align: center;
+    }
+    .buttons {
+        padding: 10px 20px;
+        font-size: 2em;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+        margin: 5px;
+    }
+    #inc {
+        background-color: rgb(76, 175, 80); 
+    }
+    #dec {
+        background-color: rgb(244, 67, 54); 
+    }
+    #resetbtn {
+        background-color: rgb(117, 117, 117); 
+    }
+    .buttons:hover {
+        transform: scale(1.1); 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+        cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+    
+    <label id="countLabel">0</label><br>
+    <div id="container">
+        <button id="inc" class="buttons">increase</button>
+        <button id="dec" class="buttons">decrease</button>
+        <button id="resetbtn" class="buttons">reset</button>
+    </div>
+    <script src="index.js">
+    </script>
+</body>
+</html>
