@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PORTFOLIO</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: rgb(9, 9, 102);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 22px;
+        }
+        nav{ 
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 84px;
+            background-color: rgb(8, 8, 69);
+        }
+        .left{
+            font-size: 27px;
+            font-weight: 600;
+        }
+        .firstsec{
+            display: flex;
+            justify-content: space-around;
+            margin: 60px 0;
+        }
+        .leftsec{
+            font-size: 2.2rem;
+            width: 45%;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: lavender;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px;
+            text-align: center;
+        }
+        .projects h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .project-card {
+            background: rgb(8, 8, 69);
+            padding: 20px;
+            margin: 15px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px;
+            text-align: center;
+            background: rgb(8, 8, 69);
+        }
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .contact a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: lightblue;
+            font-size: 1.1rem;
+        }
+        .contact a:hover {
+            color: lavender;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="left">Farzin's portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#about">About</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Intro Section -->
+        <section id="home" class="firstsec">
+            <div class="leftsec">Hi I am <b>Mir Farzin Hussain</b> 
+                <div>and I am studying COMPUTER SCIENCE & AIML in MSRIT</div>
+            </div>
+            <div class="rightsec"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>This is my first static portfolio built with HTML and CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: Counter app</h3>
+                <a href="index.html" target="_blank">View attachment</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>+91 9632806147</p>
+            <!-- <a href="tel:+919632806147">📞 Call Me</a> -->
+            <a >mirfarzin25@gmail.com</a>
+            <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
+            <!-- <a href="https://www.instagram.com/yourinsta" target="_blank">📸 Instagram</a> -->
+        </section>
+    </main>
+    
+</body>
+</html>
