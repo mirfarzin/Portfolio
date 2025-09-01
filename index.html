@@ -1,142 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>PORTFOLIO</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-            background-color: rgb(9, 9, 102);
-            font-family: 'Poppins', sans-serif;
-            color: white;
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li{
-            list-style: none;
-            margin: 0 22px;
-        }
-        nav{ 
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 84px;
-            background-color: rgb(8, 8, 69);
-        }
-        .left{
-            font-size: 27px;
-            font-weight: 600;
-        }
-        .firstsec{
-            display: flex;
-            justify-content: space-around;
-            margin: 60px 0;
-        }
-        .leftsec{
-            font-size: 2.2rem;
-            width: 45%;
-        }
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-        nav ul li a:hover{
-            color: lavender;
-        }
+  <title>PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: rgb(9, 9, 102);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
 
-        /* Projects Section */
-        .projects {
-            padding: 50px;
-            text-align: center;
-        }
-        .projects h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .project-card {
-            background: rgb(8, 8, 69);
-            padding: 20px;
-            margin: 15px auto;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
-        }
+    .navbar {
+      background-color: rgb(8, 8, 69) !important;
+    }
 
-        /* Contact Section */
-        .contact {
-            padding: 50px;
-            text-align: center;
-            background: rgb(8, 8, 69);
-        }
-        .contact h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .contact a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: lightblue;
-            font-size: 1.1rem;
-        }
-        .contact a:hover {
-            color: lavender;
-        }
-    </style>
+    /* Hero Section */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background: linear-gradient(to right, rgb(9, 9, 102), rgb(8, 8, 69));
+      padding: 50px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 15px 0 25px;
+    }
+
+    /* Projects */
+    .projects {
+      padding: 60px 20px;
+      background-color: rgb(9, 9, 102);
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      background: rgb(8, 8, 69);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Contact */
+    .contact {
+      padding: 60px 20px;
+      background: rgb(8, 8, 69);
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 15px;
+      text-decoration: none;
+      color: lightblue;
+      font-size: 1.2rem;
+    }
+
+    .contact a:hover {
+      color: lavender;
+    }
+  </style>
 </head>
+
 <body>
-    
-    <nav>
-        <div class="left">Farzin's portfolio</div>
-        <div class="right">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <!-- <li><a href="#about">About</a></li> -->
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Farzin's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div>
+      <h1>Hi, I am <b>Mir Farzin Hussain</b></h1>
+      <p>Studying COMPUTER SCIENCE & AIML at MSRIT</p>
+      <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <h4>Portfolio Website</h4>
+            <p>This is my first static portfolio built with HTML, CSS, and Bootstrap.</p>
+          </div>
         </div>
-    </nav>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <h4>Counter App</h4>
+            <p>A simple JavaScript counter application.</p>
+            <a href="counter-app/index.html" class="btn btn-outline-light btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card h-100">
+            <h4>Coming Soon</h4>
+            <p>Stay tuned for my next project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <!-- Intro Section -->
-        <section id="home" class="firstsec">
-            <div class="leftsec">Hi I am <b>Mir Farzin Hussain</b> 
-                <div>and I am studying COMPUTER SCIENCE & AIML in MSRIT</div>
-            </div>
-            <div class="rightsec"></div>
-        </section>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><i class="bi bi-telephone-fill"></i> +91 9632806147</p>
+    <p><i class="bi bi-envelope-fill"></i> mirfarzin25@gmail.com</p>
+    <a href="https://github.com/yourgithub" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    <a href="https://www.instagram.com/yourinsta" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+  </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>My Projects</h2>
-            <div class="project-card">
-                <h3>Project 1: Portfolio Website</h3>
-                <p>This is my first static portfolio built with HTML and CSS.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2: Counter app</h3>
-                <a href="counter-app/index.html">View attachment</a>            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>+91 9632806147</p>
-            <!-- <a href="tel:+919632806147">📞 Call Me</a> -->
-            <a >mirfarzin25@gmail.com</a>
-            <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
-            <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank">🔗 LinkedIn</a>
-            <!-- <a href="https://www.instagram.com/yourinsta" target="_blank">📸 Instagram</a> -->
-        </section>
-    </main>
-    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
